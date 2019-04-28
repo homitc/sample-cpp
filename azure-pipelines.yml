@@ -17,7 +17,7 @@ steps:
 
 - task: VSBuild@1
   inputs:
-    platform: 'Win32'
+    platform: 'x86'
     solution: '$(solution)'
     configuration: 'Debug'
     msbuildArgs: '/p:AppxBundlePlatforms="x86" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload'
