@@ -23,7 +23,7 @@ steps:
     msbuildArgs: '/p:AppxBundlePlatforms="x86" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload'
     
 - script: |
-    echo hello
+    echo '$(Build.SourcesDirectory)'
   displayName: Script
 
 - task: RichCodeNavIndexer@0
