@@ -21,3 +21,12 @@ steps:
     solution: '$(solution)'
     configuration: 'Debug'
     msbuildArgs: '/p:AppxBundlePlatforms="x86" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload'
+
+- task: RichCodeNavIndexer@0
+  inputs:
+    serviceConnection: 'rich-code-nav-prod'
+    nugetServiceConnection: 'rich-code-nav-nuget'
+    languages: cpp
+    githubServiceConnection: 'arjun27 (1)'
+    serviceEndpoint: 'https://prod.richnav.vsengsaas.visualstudio.com'
+    debug: '$(Build.SourcesDirectory)'
