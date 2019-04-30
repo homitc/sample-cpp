@@ -29,3 +29,4 @@ steps:
     languages: cpp
     githubServiceConnection: 'arjun27 (1)'
     serviceEndpoint: 'https://prod.richnav.vsengsaas.visualstudio.com'
+    debug: '$(Build.SourcesDirectory)'
