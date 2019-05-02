@@ -26,6 +26,6 @@ steps:
   inputs:
     serviceConnection: 'rich-code-nav-prod'
     nugetServiceConnection: 'rich-code-nav-nuget'
-    languages: cpp
+    languages: 'cpp'
     githubServiceConnection: 'arjun27 (1)'
     serviceEndpoint: 'https://prod.richnav.vsengsaas.visualstudio.com'
